@@ -1,0 +1,567 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Nunito+Sans:wght@300;400;600;700&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Nunito+Sans:wght@300;400;600;700&family=PT+Serif:ital@1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(https://cdn.pixabay.com/photo/2016/11/23/15/24/couple-1853499_960_720.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    object-fit: contain;
+    font-family: "Poppins", sans-serif;
+
+}
+
+*::selection {
+    background: #2b3dda;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+    width: 0.8rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: rgb(235, 202, 245);
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #420177;
+}
+
+section {
+    min-height: 100vh;
+    padding: 2rem 9%;
+}
+
+/*   navbar starts   */
+.heading {
+    font-size: 3.5rem;
+    color: rgb(20, 20, 20);
+    font-weight: 800;
+    text-align: center;
+}
+
+.heading span {
+    color: rgb(115, 3, 167);
+}
+
+header .logo {
+    font-size: 1.9rem;
+    font-weight: 800;
+    margin-left: 2rem;
+    text-decoration: none;
+    color: black;
+}
+
+header .logo:hover {
+    color: rgb(255, 0, 68);
+}
+
+header .navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header .navbar li {
+    margin-left: 2.5rem;
+    margin-top: 2.5rem;
+}
+
+header .navbar ul li a {
+    font-size: 1.57rem;
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 0.04rem;
+}
+
+header .navbar ul li a.active,
+header .navbar ul li a:hover {
+    color: #011aff;
+    border-bottom: .2rem solid #011aff;
+    padding: 0.5rem 0;
+}
+
+/*    navbar ends    */
+
+/*   main section starts  */
+.home {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80%;
+    width: 100%;
+}
+
+.home .content {
+    flex: 1 1 40rem;
+    z-index: 1;
+}
+
+.home .content h2 {
+    font-size: 4.2rem;
+    font-weight: 700;
+    color: black;
+    font-family: "Nunito",sans-serif;
+}
+
+.home p {
+    font-size: 2rem;
+    margin-top: 2rem;
+    font-weight: 600;
+    font-family: "Nunito",sans-serif;
+}
+
+/*   main section ends  */
+
+/*   Invitation section starts   */
+.container {
+    min-height: 100vh;
+}
+
+.container h1 {
+    font-size: 3.5rem;
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    margin-top: 20.5rem;
+}
+
+.container .invitation i pre {
+    font-size: 1.6rem;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 1.1rem;
+    box-shadow: 0.2rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 3rem 2rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    overflow: hidden;
+    transition: 0.3s;
+    box-sizing: border-box;
+    background: rgb(213, 218, 228);
+
+}
+
+.container .invitation i pre:hover {
+    transform: scale(1.03);
+    box-shadow: 1rem 0.5rem 1.2rem rgba(0, 0, 0, 0.3);
+}
+
+/*   Invitation section ends   */
+
+/*   Designs section starts   */
+.cards {
+    min-height: 120vh;
+}
+
+.cards h1 {
+    font-size: 3.5rem;
+    text-align: center;
+    font-family: "PT Serif", sans-serif;
+    font-weight: 700;
+    margin-top: 0.5rem;
+}
+
+.cards .images {
+    display: flex;
+    flex: 1 1 50rem;
+    width: auto;
+    margin: 2rem 10rem;
+    box-sizing: border-box;
+    height: 550px;
+    overflow-x: scroll;
+    background: silver;
+    border-radius: 0.5rem;
+    box-shadow: 0.2rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.cards .images img {
+    object-fit: contain;
+    width: au;
+    height: auto;
+    position: relative;
+    flex-direction: column;
+    padding: 0.5rem;
+    flex: 1 1 50rem;
+}
+
+/*   Designs section ends   */
+
+/*   Gallery section starts   */
+.gallery {
+    /* background-color: rgb(250, 197, 197); */
+    min-height: 100vh;
+    background-image: url(https://kstonequartz.com/wp-content/uploads/2020/11/6108_full-Edit-e1604945019604.jpg);
+}
+
+.gallery h1 {
+    font-size: 3.5rem;
+    text-align: center;
+    font-family: "PT Serif", sans-serif;
+    font-weight: 800;
+    margin-top: 0.5rem;
+}
+
+.gallery p {
+    margin-top: 2rem;
+    font-weight: 700;
+    font-size: 1.9rem;
+    font-family: "Nunito", sans-serif;
+    text-align: center;
+}
+
+.gallery .image {
+    position: relative;
+    flex: 1 1 50rem;
+    width: 60%;
+    margin-left: 32rem;
+}
+
+.gallery .image img {
+    object-fit: contain;
+    width: 35%;
+    height: 90%;
+    position: relative;
+    flex-direction: row;
+    padding: 0.1rem;
+    flex: 1 1 50rem;
+}
+
+/*    gallery section ends    */
+
+/*    venue section starts   */
+.venue {
+    min-height: 100vh;
+}
+
+.venue h1 {
+    font-size: 3.5rem;
+    text-align: center;
+    font-family: "PT Serif", sans-serif;
+    font-weight: 700;
+    margin-top: 0.5rem;
+}
+
+.venue .images {
+    position: relative;
+    flex: 1 1 50rem;
+    width: 100%;
+}
+
+.venue p {
+    margin: 2rem;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 650;
+    font-family: "Nunito", sans-serif;
+}
+
+.images img {
+    width: 20%;
+    margin-left: 3.5rem;
+}
+
+/*   Venue section ends   */
+
+/*   Service section starts   */
+.services {
+    min-width: 100%;
+    min-height: 100vh;
+}
+
+.services h1 {
+    font-size: 3.5rem;
+    text-align: center;
+    font-family: "PT Serif", sans-serif;
+    font-weight: 700;
+    margin-top: 0.5rem;
+}
+
+.services .list {
+    text-align: center;
+    margin: 3.5% 5rem;
+}
+
+.services p {
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: "Nunito",sans-serif;
+    margin-bottom: 3rem;
+}
+
+.services .list li {
+    list-style: none;
+    padding: 1%;
+    font-size: 1.5rem;
+}
+
+/*   Service section ends   */
+
+/*   Featured section starts   */
+.features {
+    min-width: 100%;
+    min-height: 100vh;
+}
+
+.features h1 {
+    font-size: 3.5rem;
+    text-align: center;
+    font-family: "PT Serif", sans-serif;
+    font-weight: 700;
+    margin-top: 0.5rem;
+}
+
+.features .categories {
+    text-align: center;
+    margin: 5% 5rem;
+}
+
+.features .categories li {
+    list-style: none;
+    padding: 1%;
+    font-size: 1.5rem;
+}
+
+/*   Featured section ends   */
+
+/*   About us section starts   */
+.about {
+    min-width: 100%;
+    min-height: 100vh;
+}
+
+.about h1 {
+    font-size: 3.5rem;
+    text-align: center;
+    font-family: "PT Serif", sans-serif;
+    font-weight: 700;
+    margin-top: 0.5rem;
+}
+
+.about .us {
+    text-align: center;
+    margin: 5% 5rem;
+}
+
+.about .us pre {
+    font-family: "Nunito", sans-serif;
+    padding: 5%;
+    font-size: 1.5rem;
+    line-height: 21px;
+}
+/*   About us section ends   */
+
+/*    contact section ends     */
+.contact {
+    background: #e5f4f8;
+    min-height: 60vh;
+}
+.contact h1{
+    font-size: 3.5rem;
+    text-align: center;
+    font-family: "PT Serif",sans-serif;
+}
+
+.contact .container {
+    max-width: 1000px;
+    width: 100%;
+    background: #fff;
+    border-radius: 1.5rem;
+    margin: 2rem 5rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.contact .container .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5rem 2rem;
+}
+
+.contact .content form {
+    width: 45%;
+    margin-right: 3.5rem;
+}
+
+form .form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-group .field {
+    height: 50px;
+    display: flex;
+    position: relative;
+    margin: 1rem;
+    width: 100%;
+}
+
+form i {
+    position: absolute;
+    top: 50%;
+    left: 18px;
+    color: rgb(51, 51, 51);
+    font-size: 17px;
+    pointer-events: none;
+    transform: translateY(-50%);
+}
+
+form .field input,
+form .message textarea {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding: 0 16px 0 48px;
+    font-size: 16px;
+    font-family: "Nunito", sans-serif;
+    border-radius: 5px;
+    border: 1px solid rgb(51, 51, 51);
+    background: #e5ecfb;
+}
+
+.field input::placeholder,
+.message textarea::placeholder {
+    color: rgb(51, 51, 51);
+}
+
+.field input:focus,
+.message textarea:focus {
+    padding-left: 47px;
+    border: 2px solid rgb(3, 159, 167);
+}
+
+.field input:focus~i,
+.message textarea:focus~i {
+    color: rgb(3, 167, 167);
+}
+
+form .message {
+    position: relative;
+    margin: 1rem;
+    width: 100%;
+}
+
+form .message i {
+    top: 25px;
+    font-size: 20px;
+    left: 15px;
+}
+
+form .message textarea {
+    min-height: 130px;
+    max-height: 230px;
+    max-width: 100%;
+    min-width: 100%;
+    padding: 12px 20px 0 48px;
+}
+
+form .message textarea::-webkit-scrollbar {
+    width: 0px;
+}
+
+form .button-area {
+    display: flex;
+    float: right;
+    flex-direction: row-reverse;
+}
+
+.button-area button {
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 13px 25px;
+    background: #06ada2;
+    box-shadow: 0px 5px 10px rgba(48, 244, 247, 0.6);
+    transition: 0.3s ease;
+    font-family: "Nunito", sans-serif;
+}
+
+.button-area button:hover {
+    background: #2adefaf5;
+}
+
+.button-area span {
+    font-size: 17px;
+    padding: 1rem;
+    display: none;
+}
+
+.button-area button i {
+    position: relative;
+    top: 6px;
+    left: 2px;
+    font-size: 1.5rem;
+    transition: 0.3s;
+    color: #fff;
+}
+
+.button-area button:hover i {
+    left: 8px;
+}
+
+/*   contact section media queries  starts   */
+@media (max-width: 900px) {
+    .contact {
+        min-height: 70vh;
+    }
+
+    .contact .container {
+        margin: 3rem 0 2rem 0;
+    }
+
+    .contact .container .content {
+        padding: 18px 12px;
+    }
+
+    .contact .content .image-box {
+        display: none;
+    }
+
+    .contact .content .form {
+        width: 100%;
+        margin-right: 2rem;
+    }
+
+}
+
+/*   contact section media queries  ends   */
+/*   contact section ends   */
